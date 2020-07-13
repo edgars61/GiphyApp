@@ -74,22 +74,17 @@ body{
   height: 100%;
  
 }
-.showResults{
-  display: flex;
-  
-  
- }
+
 img{
  
   align-self:center;
-  margin-top: 2%;
-  margin-bottom: 2%;
-  width: 23%;
   margin: auto;
-  margin-top: 1%;
-  margin-bottom: 1%;
 }
-
+.showResults{
+  display: flex;
+  justify-content: space-between;
+  
+ }
 
 /*ABOUT US*/
 h2{
@@ -115,16 +110,10 @@ ion-icon{
   color: white;
   font-size: 2em;
 }
-.facebook{
-  color: blue;
- 
-}
+
 /**FOOTER*/
 div.footer{
   text-align: center;
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 100%;
   background-color:#282828;
   color: white;
@@ -148,11 +137,11 @@ div.footer-static{
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
   .showResults{
-    /*flex-direction: column;*/
+    flex-direction: column;
     
   }
   img{
-    height: 100%;
+    
     width: 90%;
   }
 

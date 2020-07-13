@@ -13,21 +13,13 @@ $("form").submit(function(e){
   //window.alert(noItems);
   $('div.results').empty();
   searchGiphy(searchTerm,noItems);
+  $("html").append('div><nav><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a><a href="httpps://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a><a href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></nav><p>Copyright 2020</p></div>')
 });
 
 
 
 }
 
-function createSlice()
-{
-  var divs = $("img.results");
-  for(var i = 0; i < divs.length; i+=4) {
-    divs.slice(i, i+4).wrapAll("<div></div>");
-  }
-
-
-}
 
 
 
@@ -51,12 +43,19 @@ request.onload = function () {
   // Begin accessing JSON data here
 //window.alert("Success!");
 var obj = JSON.parse(this.response)
-for (var x=0;x<25;x++){
+for (var x=0;x<obj.data.length;x++){
   $('.results').append('<img src='+obj.data[x].images.original.url+'>');
   //window.alert("silicing!");
 }
-createSlice();
+var divs = $('img');
+window.alert(divs.length);
+for(var i = 0; i < divs.length; i+=4) {
+  divs.slice(i, i+4).wrapAll("<div class='showResults'></div>");
+  
 }
+}
+
+
 
 // Send request
 request.send()
