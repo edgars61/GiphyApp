@@ -4,12 +4,6 @@ var searchTerm;
 var noItems;
 
 $( document ).ready(function(e) {
- 
-
-
-  
-
-  
 });
 $("form").submit(function(e){
   event.preventDefault();
@@ -28,9 +22,9 @@ $("form").submit(function(e){
 
 function createSlice()
 {
-  var divs = $("div > img");
+  var divs = $("img.results");
   for(var i = 0; i < divs.length; i+=4) {
-    divs.slice(i, i+4).wrapAll("<div class='x'></div>");
+    divs.slice(i, i+4).wrapAll("<div class='showResults'></div>");
   }
 
 
@@ -59,7 +53,7 @@ request.onload = function () {
 //window.alert("Success!");
 var obj = JSON.parse(this.response)
 for (var x=0;x<25;x++){
-  $('#results').append('<img src='+obj.data[x].images.original.url+'>');
+  $('.results').append('<img src='+obj.data[x].images.original.url+'>');
   //window.alert("silicing!");
 }
 createSlice();
