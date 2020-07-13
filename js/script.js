@@ -13,7 +13,7 @@ $("form").submit(function(e){
   //window.alert(noItems);
   $('div.results').empty();
   searchGiphy(searchTerm,noItems);
-  $("html").append('div><nav><a href="https://www.instagram.com/"><ion-icon name="logo-instagram"></ion-icon></a><a href="httpps://www.linkedin.com/"><ion-icon name="logo-linkedin"></ion-icon></a><a href="https://www.twitter.com/"><ion-icon name="logo-twitter"></ion-icon></a></nav><p>Copyright 2020</p></div>')
+  
 });
 
 
@@ -48,7 +48,6 @@ for (var x=0;x<obj.data.length;x++){
   //window.alert("silicing!");
 }
 var divs = $('img');
-window.alert(divs.length);
 for(var i = 0; i < divs.length; i+=4) {
   divs.slice(i, i+4).wrapAll("<div class='showResults'></div>");
   
