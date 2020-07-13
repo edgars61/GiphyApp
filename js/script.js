@@ -44,7 +44,8 @@ request.onload = function () {
 
 var obj = JSON.parse(this.response)
 for (var x=0;x<obj.data.length;x++){
-
+  $('.results').append('<img src='+obj.data[x].images.original.url+'>');
+  
 }
 var divs = $('img');
 for(var i = 0; i < divs.length; i+=4) {
