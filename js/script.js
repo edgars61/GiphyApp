@@ -58,12 +58,13 @@ request.onload = function () {
   // Begin accessing JSON data here
 //window.alert("Success!");
 var obj = JSON.parse(this.response)
-
+$("footer").remove();
 for (var x=0;x<25;x++){
   $('#results').append('<img src='+obj.data[x].images.original.url+'>');
   //window.alert("silicing!");
 }
 createSlice();
+
 
 }
 
