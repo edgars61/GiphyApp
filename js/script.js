@@ -1,5 +1,4 @@
 function myFunction(){
-//window.alert("FUCK")
 var searchTerm;
 var noItems;
 
@@ -12,7 +11,7 @@ $("form").submit(function(e){
   searchTerm = $("#search").val();
   noItems=$("#numbero").val();
   //window.alert(noItems);
-  $('#results').empty();
+  $('div.results').empty();
   searchGiphy(searchTerm,noItems);
 });
 
@@ -24,7 +23,7 @@ function createSlice()
 {
   var divs = $("img.results");
   for(var i = 0; i < divs.length; i+=4) {
-    divs.slice(i, i+4).wrapAll("<div class='showResults'></div>");
+    divs.slice(i, i+4).wrapAll("<div></div>");
   }
 
 

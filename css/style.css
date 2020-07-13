@@ -74,6 +74,11 @@ body{
   height: 100%;
  
 }
+.showResults{
+  display: flex;
+  
+  
+ }
 img{
  
   align-self:center;
@@ -84,11 +89,7 @@ img{
   margin-top: 1%;
   margin-bottom: 1%;
 }
-.showResults{
- display: flex;
- justify-content: space-between;
- 
-}
+
 
 /*ABOUT US*/
 h2{
@@ -147,7 +148,7 @@ div.footer-static{
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
   .showResults{
-    flex-direction: column;
+    /*flex-direction: column;*/
     
   }
   img{
