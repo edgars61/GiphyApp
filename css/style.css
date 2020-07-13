@@ -144,7 +144,15 @@ div.footer-static{
     
     width: 90%;
   }
-
+  #header{
+    flex-direction: column;
+  }
+  #topnav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+  }
   .container-outer{
     flex-direction: column;
   }
