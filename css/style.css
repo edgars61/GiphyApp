@@ -1,27 +1,109 @@
-.row {
-    display: flex;
-    
-   
-  }
+*{
+ 
 
+  color:white;
+  border-style: solid;
+  border-color: yellow;
+ 
+ 
+ 
+}
+html{
+
+  background-color: black;
+}
+#header{
+  background-color:#282828;
+  
+  display: flex;
+  justify-content: space-between;
+
+ 
+}
+h1{
+  background-color: #282828;
+  margin-left: 2%;
+}
+nav{
+  background-color: #282828;
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+ 
+  
+}
+.gifSearch{
+  margin-right: 1%;
+}
+.gifNo{
+  margin-left: 1%;
+}
+input{
+  color:black;
+  margin-top: 1%;
+  background-color: white;
+
+  
+}
+label{
+  font-size: 20px;
+  font-weight: bold;
+}
+.container-outer{
+  display: flex;
+  justify-content: space-around;
+
+}
+.submitButton{
+  text-align: center;
+  margin: auto;
+}
+body{
+  height: 100%;
+ 
+}
+img{
+ 
+  align-self:center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  width: 23%;
+  margin: auto;
+}
+.x{
+ display: flex;
+ justify-content: space-around; 
+ 
+}
+
+/*ABOUT US*/
+h2{
+  text-align: center;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 600px) {
+  .x{
+    flex-direction: column;
+    
+  }
   img{
-    height:100%;
-    margin:auto;
-    margin-left: 1%;
+    height: 100%;
+    width: 90%;
+  }
 
+  .container-outer{
+    flex-direction: column;
   }
-  
-  /* Create two equal columns that sits next to each other 
-  
-  .column {
-    flex: 25%;
-    padding: 0 4px;
+  .gifSearch, .gifNo{
+    margin: auto;
   }
-  
-  .column img {
-    margin-top: 8px;
-    vertical-align: middle;
-
-    
+  #header{
+    width: 100%;
   }
-  */
+}

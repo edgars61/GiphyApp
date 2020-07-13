@@ -2,28 +2,52 @@
 <html>
     <head>
         <title>Love</title>
+        
+        <!--VIEWPOER-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel ="stylesheet" href="css/normalize.css" type="text/css">
         <script src="js/script.js"></script>
         <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/style.css" type="text/css">
     </head>
+    
     <body onload="myFunction()">
-        <header>
-            <p>Edgar's GIF App</p>
+        <div id="header">
+       
+            <h1>Edgar's GIF App</h1>
             <nav>
                 <a href="#">Search</a>
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </nav>
-        </header>
-        <input type ="text">
-        <button type="submit"><ion-icon name="search-outline"></ion-icon></button>
-        <div>
-            
-        </div>
-    <!--
-        <div class="row"> 
         
+    </div>
+        <h2>Search for your favorite GIFS!</h2>
+        <form  method="POST">
+        <div class="container-outer">
+        <div class="container gifSearch">
+        <label>GIF Search:</label>
+        <input id="search" type ="text">
+        </div>
+        <div class="container gifNo">
+        <label>No. of GIFS:</label>
+        <input type="number" id="numbero">
+        </div>
+        </div>
+        <div class="submitButton">
+            <button type="submit">Submit</button>
+            </div>
+        <div class="load">
+
+        </form>
+    
+        </div>
+        <div id="results"> 
+            
+            
+             
+            <!--
             <img src="https://media3.giphy.com/media/v6aOjy0Qo1fIA/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media0.giphy.com/media/WXB88TeARFVvi/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/13CoXDiaCcCoyk/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
@@ -31,9 +55,9 @@
             <img src="https://media0.giphy.com/media/MCfhrrNN1goH6/giphy-downsized-large.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy-downsized-large.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media0.giphy.com/media/q1MeAPDDMb43K/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media2.giphy.com/media/E0cyxhawhe9dm/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
-        </div>
+        
        
-        <div class="row">
+        
             <img src="https://media1.giphy.com/media/rwCX06Y5XpbLG/giphy-downsized-large.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy-downsized-large.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media1.giphy.com/media/C9x8gX02SnMIoAClXa/giphy-downsized-large.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy-downsized-large.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/ZE6HYckyroMWwSp11C/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
@@ -41,8 +65,8 @@
             <img src="https://media2.giphy.com/media/p4xp4BjHIdane/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/1gUn2j2RKcK0yaLKaO/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media0.giphy.com/media/DPiuat0EsqP3a/giphy-downsized-large.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy-downsized-large.gifalt=&quot;Flowers" in="" chania"="">
-        </div>
-        <div class="row">
+        
+        
             <img src="https://media1.giphy.com/media/CjmvTCZf2U3p09Cn0h/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media1.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/mlvseq9yvZhba/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
@@ -50,14 +74,18 @@
             <img src="https://media0.giphy.com/media/10dU7AN7xsi1I4/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/nR4L10XlJcSeQ/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media1.giphy.com/media/vFKqnCdLPNOKc/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
-        </div>
-        <div class="row">
+        
+        
             <img src="https://media1.giphy.com/media/105D9aefNvprfG/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media3.giphy.com/media/aC45M5Q4D07Pq/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media1.giphy.com/media/4iqMzLtBO9KSY/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
             <img src="https://media2.giphy.com/media/Nm8ZPAGOwZUQM/giphy.gif?cid=836264dad2d4c5a2baa672fc0c62e0f63f336969b1a7d1aa&amp;rid=giphy.gifalt=&quot;Flowers" in="" chania"="">
-        </div>
-    -->
+            -->
+    </div>
+    <div id="about">
+        <h2>About us</h2>
+        <p>We are GIF enthustatiosn who want to share our love of GIFS with the rest of the world.</p>
+    </div>
     </body>
     <footer></footer>
 </html>
