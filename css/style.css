@@ -130,7 +130,20 @@ div.footer{
   text-align: center;
   
 }
-
+div.footer-static{
+  text-align: center;
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#282828;
+  color: white;
+  text-align: center;
+  
+}
+.hidden{
+  display: none;
+}
 /*MEDIA QUERIES*/
 @media only screen and (max-width: 600px) {
   .x{
