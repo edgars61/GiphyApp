@@ -7,10 +7,10 @@ $( document ).ready(function(e) {
 $("form").submit(function(e){
   event.preventDefault();
   
-  //alert("Submitted");
+ 
   searchTerm = $("#search").val();
   noItems=$("#numbero").val();
-  //window.alert(noItems);
+  
   $('div.results').empty();
   searchGiphy(searchTerm,noItems);
   
@@ -32,7 +32,7 @@ var requestUrlP3= "&offset=0&rating=g&lang=en";
 //Get users search term
 //create request URL
 var requestUrl = requestUrlP1+searchTerm+requestUrlP2+noItems+requestUrlP3;
-//window.alert(requestUrl);
+
 
 // Create a request variable and assign a new XMLHttpRequest object to it.
 var request = new XMLHttpRequest()
@@ -41,11 +41,10 @@ var request = new XMLHttpRequest()
 request.open('GET', requestUrl, true)
 request.onload = function () {
   // Begin accessing JSON data here
-//window.alert("Success!");
+
 var obj = JSON.parse(this.response)
 for (var x=0;x<obj.data.length;x++){
-  $('.results').append('<img src='+obj.data[x].images.original.url+'>');
-  //window.alert("silicing!");
+
 }
 var divs = $('img');
 for(var i = 0; i < divs.length; i+=4) {
