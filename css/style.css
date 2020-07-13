@@ -73,6 +73,8 @@ img{
   margin-bottom: 2%;
   width: 23%;
   margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
 .x{
  display: flex;
