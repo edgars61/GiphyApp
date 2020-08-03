@@ -17,53 +17,57 @@
     <!-- JS-->
     <script src ="js/script.js"></script>
     <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+    <!--Font-->
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <title>Hello, world!</title>
 </head>
   <body>
     <div id="page-container">
         <div id="content-wrap">
           <!-- all other page content -->
-          <nav class="navbar navbar-expand-sm navbar-light bg-light">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="collapsibleNavId">
-                  <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                      <li class="nav-item active">
-                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="#">Link</a>
-                      </li>
-                      <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                          <div class="dropdown-menu" aria-labelledby="dropdownId">
-                              <a class="dropdown-item" href="#">Action 1</a>
-                              <a class="dropdown-item" href="#">Action 2</a>
-                          </div>
-                      </li>
-                  </ul>
-              </div>
+          <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">GIFS4US</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">About</a>
+                </li>
+              </ul>
+              
+            </div>
           </nav>
 
           <!--Search Bar-->
-          <div class="container h-100">
+          <div class="container-fluid searchSection">
             <div class="d-flex justify-content-center h-100">
               <div class="searchbar">
-                <input id ="search" class="search_input" type="text" name="" placeholder="Search...">
-                <button type="submit" onclick="myfunction()"><ion-icon class="search_icon" name="search-outline"></ion-icon></button>
+                <input  class="search_input" type="text" name="" placeholder="Search...">
+                <button type="submit" onclick="myfunction()" class="search_icon"><i class="fas fa-search"></i></button>
               </div>
             </div>
           </div>
-          <div class ="container-fluid" id="searchResults">
+       
+          <div class ="container-fluid results-container" id="searchResults">
+            <h1 class="searchData">Today's trending GIFS!!!</h1>
+
               
               
           </div>
           
           </div>
-          <footer id="footer"></footer>
+          
+          <footer id="footer">
+           
+          </footer>
+       
           </div>
         
 
