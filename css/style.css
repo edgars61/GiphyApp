@@ -1,161 +1,69 @@
-*{
- 
-
-  color:white;
-  
-  font-family: 'Rubik Mono One', sans-serif;
- 
- 
- 
-}
-html{
-
-  background-color: black;
-  position: relative;
-  height: 100%;
-}
-
-#header{
-  background-color:#282828;
-  
-  display: flex;
-  justify-content: space-between;
-
- 
-}
-h1{
-  background-color: #282828;
-  margin-left: 2%;
-}
-nav{
-  background-color: #282828;
-  
-}
-.container{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin: auto;
- 
-  
-}
-.gifSearch{
-  margin-right: 1%;
-}
-.gifNo{
-  margin-left: 1%;
-}
-input{
-  color:black;
-  margin-top: 1%;
-  background-color: white;
-
-  
-}
-label{
-  font-size: 1.5em;
-  font-weight: bold;
-}
-.container-outer{
-  display: flex;
-  justify-content: space-around;
-
-}
-.submitButton{
-  margin-top: 10%;
-  text-align: center;
-  margin: auto;
- 
-}
-button{
-  color: black;
-}
-body{
-  height: 100%;
- 
-}
-
 img{
- 
-  align-self:center;
-  margin: auto;
+  margin-top: 1%;
+  margin-bottom: 1%;
 }
-.showResults{
+
+.searchbar{
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  border-radius: 30px;
+  padding: 10px;
+  }
+
+  .search_input{
+  color: white;
+  border: 0;
+  outline: 0;
+  background: none;
+  width: 0;
+  caret-color:transparent;
+  line-height: 40px;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_input{
+  padding: 0 10px;
+  width: 450px;
+  caret-color:red;
+  transition: width 0.4s linear;
+  }
+
+  .searchbar:hover > .search_icon{
+  background: white;
+  color: #e74c3c;
+  }
+
+  .search_icon{
+  height: 40px;
+  width: 40px;
+  float: right;
   display: flex;
-  justify-content: space-between;
-  
- }
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color:white;
+  text-decoration:none;
+  }
 
-/*ABOUT US*/
-h2{
-  text-align: center;
+.container-fluid{
+  color:white;
 }
-p{
-  margin: auto;
-  text-align: center;
-}
-#about{
-  width: 50%;
-  margin: auto;
-}
-.about_p{
-  border-style: solid;
-  border-color: white;
+/*******Footer******/
+#page-container {
+  position: relative;
+  min-height: 100vh;
 }
 
-.makeStatic{
-  position: static;
-}
-ion-icon{
-  color: white;
-  font-size: 2em;
+#content-wrap {
+  padding-bottom: 2.5rem;    /* Footer height */
 }
 
-/**FOOTER*/
-
-div.footer{
-  text-align: center;
+#footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
-  background-color:#282828;
-  color: white;
-  text-align: center;
-  
+  height: 2.5rem;
+  background-color:orange;      /* Footer height */
 }
-
-
-.hidden{
-  display: none;
-}
-/*MEDIA QUERIES*/
-@media only screen and (max-width: 600px) {
-  .showResults{
-    flex-direction: column;
-    
-  }
-  img{
-    
-    width: 90%;
-  }
-  #header{
-    flex-direction: column;
-  }
-  #topnav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: auto;
-  }
-  .container-outer{
-    flex-direction: column;
-  }
-  .gifSearch, .gifNo{
-    margin: auto;
-  }
-  #header{
-    width: 100%;
-  }
-  div.footer{
-    position: static;
-  }
-}
-
